@@ -1,0 +1,84 @@
+/* .home {
+    text-align: center;
+    padding: 5rem 1rem;
+    background: url('C:\Users\himan\OneDrive\Desktop\project\mini\urban-help\src\assets\images\myImage.webp') center/cover no-repeat;
+    color: white;
+  }
+  
+  .book-btn {
+    background-color: #ff9800;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+   */
+
+
+/* Home.css */
+
+/* Home.css */
+
+/* Container Styles */
+.home {
+  text-align: center; /* Center text */
+  padding: 5rem 1rem; /* Vertical and horizontal padding */
+  background: url('C:\Users\himan\OneDrive\Desktop\project\mini\urban-help\src\assets\images\image2.jpeg') center/cover no-repeat; /* Use relative path */
+  background-size: cover; /* Ensure the background covers the container */
+  color: white; /* Text color */
+  position: relative; /* Positioning for overlay effect */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Overlay for better text visibility */
+.home::after {
+  content: ''; /* Empty content for overlay */
+  position: absolute; /* Position overlay */
+  top: 0; /* Top edge */
+  left: 0; /* Left edge */
+  right: 0; /* Right edge */
+  bottom: 0; /* Bottom edge */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Position overlay above background */
+}
+
+/* Title Styles */
+.home-title {
+  position: relative; /* For z-index stacking */
+  z-index: 2; /* Position above the overlay */
+  font-size: 3rem; /* Large font size */
+  margin-bottom: 20px; /* Space below title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Text shadow for readability */
+}
+
+/* Button Styles */
+.book-btn {
+  background-color: #ff9800; /* Button color */
+  padding: 0.5rem 1.5rem; /* Button padding */
+  border: none; /* Remove default border */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer on hover */
+  margin-top: 1rem; /* Space above button */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s; /* Smooth transition */
+  font-size: 1.2rem; /* Font size */
+}
+
+/* Hover Effect for Button */
+.book-btn:hover {
+  background-color: #e68a00; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .book-btn {
+    padding: 0.4rem 1rem; /* Adjust button padding */
+    font-size: 1rem; /* Adjust button font size */
+  }
+}
