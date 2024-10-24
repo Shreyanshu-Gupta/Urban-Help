@@ -1,10 +1,18 @@
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
     background-color: #333;
     color: white;
-  }
+  } */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+  
   
   .nav-links {
     display: flex;
